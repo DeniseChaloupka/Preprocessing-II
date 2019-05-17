@@ -1,28 +1,38 @@
-// Navigation Styles here}
-.navigation {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  border-bottom:2px dashed #C0C0C0;
+ img{
+        border-top: 2px dashed grey;
+        margin-bottom: 20px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        @media(max-width: 500px){
+            display: flex;
+            flex-direction: column;
+            h1{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .anchor{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+        }
+
+
+        a{
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.7rem;
+            text-decoration-color: black;
+        }
+
+
+    }
 }
-.navigation .nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.navigation .logo {
-  padding: 24px 0px;
-}
-.navigation ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 350px;
-  font-size: 1.6rem;
-  padding-top: 35px;
-}
-.navigation a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #212529;
-}
+
+//Mobile Setup
